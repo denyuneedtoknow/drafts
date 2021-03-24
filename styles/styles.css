@@ -36,6 +36,7 @@ ul {
   display: flex;
   margin-left: 20px;
   margin-bottom: 10px;
+  border-radius: 2px;
 }
 .link {
   text-decoration: none;
@@ -43,6 +44,8 @@ ul {
 .list-item:hover {
   text-decoration-line: underline;
   text-decoration-thickness: 4px;
+  border: 1px solid rgb(198, 206, 194);
+  box-shadow: inset 4px 4px 5px 1px rgb(198, 206, 194);
 }
 
 .list-item::before {
@@ -63,5 +66,5 @@ ul {
   background-size: contain;
   height: 60px;
   width: 60px;
-  border: 3px solid rgb(32, 241, 13);
+  box-shadow: 4px 4px 5px 1px rgb(198, 206, 194);
 }
