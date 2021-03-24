@@ -1,0 +1,67 @@
+root {
+  --grid-number: 4;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section {
+  outline: 1px solid green;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  display: inline-block;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.list-item {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.link {
+  text-decoration: none;
+}
+.list-item:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+}
+
+.list-item::before {
+  content: '';
+  display: inline-block;
+  background-color: beige;
+  background-image: url(../images/github-computer-icons.png);
+  background-size: contain;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.list-item:hover::before {
+  content: '';
+  display: inline-block;
+  background-color: rgb(32, 241, 13);
+  background-image: url(../images/github-computer-icons.png);
+  background-size: contain;
+  height: 60px;
+  width: 60px;
+  border: 3px solid rgb(32, 241, 13);
+}
