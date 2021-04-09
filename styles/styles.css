@@ -15,6 +15,10 @@ ul {
   list-style-type: none;
   padding-left: 0;
 }
+p {
+  margin: 0;
+  padding: 0;
+}
 
 .grid {
   display: flex;
@@ -33,7 +37,10 @@ ul {
   outline: 1px solid green;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 50px;
   max-width: 960px;
+  padding-left: 20px;
+  padding-right: 50px;
 }
 .main {
   display: flex;
@@ -95,34 +102,44 @@ ul {
   margin-bottom: 50px;
   text-align: center;
 }
+
 .socials {
   display: flex;
   margin: 0;
-  justify-content: space-around;
+  flex-basis: calc((50% - 20px));
 }
-.icons {
-  background-color: cadetblue;
+.social-link + .social-link {
+  margin-left: 20px;
+}
+.social-item {
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+}
+
+.social-icons-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   fill: blue;
-}
-.social-icons {
-  display: flex;
-  flex-wrap: wrap;
-  outline: 1px solid blue;
-  padding: 10px;
+  transition: background-color 200ms linear;
 }
 
 .social-titles {
-  margin-left: 10px;
+  display: block;
+  text-align: center;
 }
-.social-icons:hover {
-  color: brown;
+.icons {
+  transition: transform 200ms linear, fill 200ms linear;
 }
-.icons:hover {
+.social-icons-link:hover {
+  background-color: rgb(161, 210, 250);
+}
+.social-icons-link:hover .icons {
   fill: #fff;
-  background-color: cornflowerblue;
-}
-.social-item {
-  display: flex;
-  flex-wrap: wrap;
+  transform: rotateZ(360deg);
 }
