@@ -62,4 +62,4 @@ let bankSavings = (pension * 12) / (percents * 0.01);
 alert(`На вашем банковском счету на момент выхода на пенсию должно находиться $${bankSavings}, чтобы под ${percents}% годовых ежемесячные выплаты составляли желаемую сумму $${pension}`);
 // вычисляем ежемесячные взносы в банк, чтобы средства в банке были 
 let monthlyEcomomy = bankSavings / 12 / (retirementAge - currentAge);
-alert(`Для этого на протяжении оставшихся вам до этого радостного события ${(retirementAge - currentAge)} лет вам стоит откладывать по $${monthlyEcomomy} ежемесячно. Желаем удачи!`);
+alert(`Для этого на протяжении оставшихся вам до этого радостного события ${(retirementAge - currentAge)} лет вам стоит откладывать по $${Math.round(monthlyEcomomy)} ежемесячно. Желаем удачи!`);
