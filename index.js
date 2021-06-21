@@ -1,14 +1,411 @@
-function includes(array, value) {
-    // Change code below this line
-    for (const data of array) {
-        if (data === value) {
-            return (data === value)
-        }
+// const atTheOldToad = {
+//     potions: [
+//         { name: 'Speed potion', price: 460 },
+//         { name: 'Dragon breath', price: 780 },
+//         { name: 'Stone skin', price: 520 },
+//     ],
+//     // Change code below this line
+//     getPotions() {
+//         return this.potions;
+//     },
+//     addPotion(potionName) {
+//         if (this.potions.includes(potionName)) {
+//             return `Potion ${potionName} is already equipped!`;
+//         }
+
+//         this.potions.push(potionName);
+//     },
+//     removePotion(potionName) {
+//         const potionIndex = this.potions.indexOf(potionName);
+
+//         if (potionIndex === -1) {
+//             return `Potion ${potionName} is not in inventory!`;
+//         }
+
+//         this.potions.splice(potionIndex, 1);
+//     },
+//     updatePotionName(oldName, newName) {
+//         const potionIndex = this.potions.indexOf(oldName);
+
+//         if (potionIndex === -1) {
+//             return `Potion ${oldName} is not in inventory!`;
+//         }
+
+//         this.potions.splice(potionIndex, 1, newName);
+//     },
+//     // Change code above this line
+// };
+// console.log(atTheOldToad.getPotions());
+
+// console.log(atTheOldToad.removePotion('Dragon breath'));
+// console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
 
 
-    } return false
-}
-console.log(includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Jupiter'));
+// const atTheOldToad = {
+//     potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//     updatePotionName(oldName, newName) {
+//         // Change code below this line
+//         const oldPotionIndex = this.potions.indexOf(oldName)
+
+
+//         this.potions.splice(oldPotionIndex, 1, newName);
+//         // Change code above this line
+//     },
+// };
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
+// console.log(atTheOldToad.potions);
+
+// const atTheOldToad = {
+//     potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//     removePotion(potionName) {
+//         // Change code below this line
+//         const oldPotionIndex = this.potions.indexOf(potionName)
+//         console.log(oldPotionIndex)
+//         this.potions.splice(oldPotionIndex, 1)
+//             // Change code above this line
+//     },
+// };
+// atTheOldToad.removePotion("Dragon breath")
+// console.log(atTheOldToad.potions);
+
+// const atTheOldToad = {
+//     potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//     addPotion(potionName) {
+//         // Change code below this line
+//         this.potions.push(potionName)
+//             // Change code above this line
+//     },
+// };
+// atTheOldToad.addPotion('Invisibility')
+// console.log(atTheOldToad.potions);
+
+
+// const atTheOldToad = {
+//     // Change code below this line
+//     potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//     getPotions() {
+//         const value = Object.values(this.potions);
+//         return value
+//     }
+//     // Change code above this line
+// };
+// console.log(atTheOldToad.getPotions());
+
+
+// const bookShelf = {
+//     books: ['The last kingdom', 'Haze', 'The guardian of dreams'],
+//     updateBook(oldName, newName) {
+//         // Change code below this line
+//         const oldBookIndex = this.books.indexOf(oldName)
+
+//         const newBookIndex = this.books.indexOf(newName)
+//         console.log(oldBookIndex);
+//         console.log(newBookIndex);
+//         this.books.splice(oldBookIndex, 1, newName);
+
+//         // Change code above this line
+//     },
+// };
+// bookShelf.updateBook("The last kingdom", "Dune")
+// console.log(bookShelf.books);
+
+
+// const bookShelf = {
+//     // Change code below this line
+//     books: ['The last kingdom', 'The guardian of dreams'],
+//     getBooks() {
+//         return 'Returning all books';
+//     },
+//     addBook(bookName) {
+//         return `Adding book ${bookName}`;
+//     },
+//     removeBook(bookName) {
+//         return "Deleting book ${bookName}"
+//     },
+//     updateBook(oldName, newName) {
+//         return "Updating book ${oldName} to ${newName}"
+//     }
+//     // Change code above this line
+// };
+// console.log(bookShelf.updateBook("Sands of dune", "Dune"));
+// function findMatches(firstArray, ...restArgs) {
+//     const matches = []; // Don't change this line
+
+//     for (let arg of restArgs) {
+
+//         if (firstArray.includes(arg)) {
+//             matches.push(arg)
+//         }
+//     }
+//     // Change code above this line
+//     return matches;
+// }
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+// // Change code below this line
+// function addOverNum(firstNumber, ...args) {
+//     let total = 0;
+
+//     for (const arg of args) {
+//         if (arg > firstNumber) {
+//             total += arg;
+//         }
+//     }
+
+//     return total;
+//     // Change code above this line
+// }
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+// function add(...args) {
+//     console.log(args);
+//     let sum = 0;
+//     for (let arg of args) {
+//         sum += arg
+
+//     }
+//     return sum
+// }
+
+// console.log(add(12, 4, 11, 48));
+// function makeTask(data) {
+//     const completed = false;
+//     const category = 'General';
+//     const priority = 'Normal';
+//     // Change code below this line
+//     return { completed, category, priority, ...data, }
+//     // Change code above this line
+// }
+// console.log(makeTask({}));
+// // Change code below this line
+// function calculateMeanTemperature(forecast) {
+//     const { today: { low: todayLow, high: todayHigh }, tomorrow: { low: tomorrowLow, high: tomorrowHigh } } = forecast
+
+//     // Change code above this line
+//     return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+// console.log(calculateMeanTemperature({ today: { low: 37, high: 40 }, tomorrow: { low: 33, high: 38 } }));
+// const forecast = {
+//     today: {
+//         low: 28,
+//         high: 32,
+//         icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
+//     },
+//     tomorrow: {
+//         low: 27,
+//         high: 31,
+//     },
+// };
+
+// const {
+//     today: { high: highToday, low: lowToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
+//     tomorrow: { high: highTomorrow, low: lowTomorrow, icon: TomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }
+// } = forecast;
+// console.log(highToday);
+// console.log(TomorrowIcon);
+
+
+// const products = [
+//     { name: 'Radar', price: 1300, quantity: 4 },
+//     { name: 'Scanner', price: 2700, quantity: 3 },
+//     { name: 'Droid', price: 400, quantity: 7 },
+//     { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//     // Пиши код ниже этой строки        
+
+//     for (const product of products) {
+//         const keys = Object.values(product);
+
+//         if (keys.includes(productName)) {
+//             return (keys[1] * keys[2]);
+//         }
+
+//     }
+//     return 0
+
+//     // Пиши код выше этой строки
+// }
+// console.log(calculateTotalPrice("Radar"));
+// const products = [
+//     { name: 'Radar', price: 1300, quantity: 4 },
+//     { name: 'Scanner', price: 2700, quantity: 3 },
+//     { name: 'Droid', price: 400, quantity: 7 },
+//     { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//     // Change code below this line
+//     const AllPropValues = [];
+
+//     for (const product of products) {
+//         const keys = Object.keys(product);
+//         console.log(keys);
+//         if (keys.includes(propName)) {
+//             AllPropValues.push(product[propName])
+//         }
+//         // console.log(AllPropValues);
+//     }
+
+//     return AllPropValues;
+//     // Change code above this line
+// }
+
+// console.log(getAllPropValues("price"));
+// const products = [
+//     { name: 'Radar', price: 1300, quantity: 4 },
+//     { name: 'Scanner', price: 2700, quantity: 3 },
+//     { name: 'Droid', price: 400, quantity: 7 },
+//     { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//     // Change code below this line
+//     for (const product of products) {
+//         // productList.push(Object.values(products.name));
+//         // console.log(product);
+//         if (product.name === productName) {
+//             console.log(product.price);
+//             return product.price
+//         }
+//     }
+//     return null;
+//     // Change code above this line
+// }
+
+// console.log(getProductPrice("Grip"));
+// const colors = [
+//     { hex: '#f44336', rgb: '244,67,54' },
+//     { hex: '#2196f3', rgb: '33,150,243' },
+//     { hex: '#4caf50', rgb: '76,175,80' },
+//     { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// for (const color of colors) {
+//     rgbColors.push(color.rgb);
+//     console.log(rgbColors);
+//     hexColors.push(color.hex);
+//     console.log(hexColors);
+// }
+
+
+// function countTotalSalary(salaries) {
+//     let totalSalary = 0;
+//     // Change code below this line
+//     const values = Object.values(salaries)
+//     console.log(values);
+//     for (const salary of values)
+//         totalSalary += salary;
+//     // Change code above this line
+//     return totalSalary;
+// }
+// console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+// function countProps(object) {
+//     // Change code below this line
+//     let propCount = 0;
+
+//     // for (const key in object) {
+//     //     if (object.hasOwnProperty(key)) {
+//     //         propCount += 1;
+//     //     }
+//     // }
+
+//     // return propCount;
+
+//     const keys = Object.keys(object);
+//     console.log(keys);
+//     for (const key of keys)
+//         propCount += 1;
+//     return propCount;
+
+//     // Change code above this line
+// }
+
+// console.log(countProps({ name: "Mango", age: 2 }));
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// for (const key of keys) {
+//     values.push(apartment[key])
+// }
+// console.log(values);
+// function countProps(object) {
+//     let propCount = 0;
+//     // Change code below this line
+//     const countArray = [];
+//     for (const key in object)
+//         if (object.hasOwnProperty(key)) {
+//             countArray.push(key)
+//             console.log(countArray);
+//             propCount = countArray.length;
+
+//         }
+//         // Change code above this line
+//     return propCount;
+// }
+// console.log(countProps({ name: "Mango", age: 2 }));
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for (const key in apartment) {
+//     keys.push(key);
+//     values.push(apartment[key])
+//     console.log(keys);
+//     console.log(values);
+
+// }
+
+
+
+
+// const apartment = {
+//     imgUrl: "https://via.placeholder.com/640x480",
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//     tags: ["premium", "promoted", "top"],
+//     owner: {
+//         name: "Henry",
+//         phone: "982-126-1588",
+//         email: "henry.carter@aptmail.com",
+//     },
+// };
+
+// // Change code below this line
+// const ownerName = apartment.owner.name;
+// const ownerPhone = apartment.owner.phone;
+// const ownerEmail = apartment.owner.email;
+// const numberOfTags = apartment.tags.length;
+// const firstTag = apartment.tags[0];
+// const lastTag = apartment.tags[apartment.tags.length - 1];
+// // Change code above this line
+// console.log(lastTag);
+// console.log(numberOfTags);
+// console.log(lastTag);
+
+
+// function includes(array, value) {
+//     // Change code below this line
+//     for (const data of array) {
+//         if (data === value) {
+//             return (data === value)
+//         }
+
+
+//     } return false
+// }
+// console.log(includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Jupiter'));
 
 
 
