@@ -1,3 +1,78 @@
+// var usersArray = [
+//   {
+//     name: 'Moore Hensley',
+//     email: 'moorehensley@indexia.com',
+//     eyeColor: 'blue',
+//     friends: ['Sharron Pace'],
+//     isActive: false,
+//     balance: 2811,
+//     gender: 'male',
+//     age: 37,
+//   },
+//   {
+//     name: 'Sharlene Bush',
+//     email: 'sharlenebush@tubesys.com',
+//     eyeColor: 'blue',
+//     friends: ['Briana Decker', 'Sharron Pace'],
+//     isActive: true,
+//     balance: 3821,
+//     gender: 'female',
+//     age: 34,
+//   },
+//   {
+//     name: 'Ross Vazquez',
+//     email: 'rossvazquez@xinware.com',
+//     eyeColor: 'green',
+//     friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//     isActive: false,
+//     balance: 3793,
+//     gender: 'male',
+//     age: 24,
+//   },
+//   {
+//     name: 'Elma Head',
+//     email: 'elmahead@omatom.com',
+//     eyeColor: 'green',
+//     friends: ['Goldie Gentry', 'Aisha Tran'],
+//     isActive: true,
+//     balance: 2278,
+//     gender: 'female',
+//     age: 21,
+//   },
+//   {
+//     name: 'Carey Barr',
+//     email: 'careybarr@nurali.com',
+//     eyeColor: 'blue',
+//     friends: ['Jordan Sampson', 'Eddie Strong'],
+//     isActive: true,
+//     balance: 3951,
+//     gender: 'male',
+//     age: 27,
+//   },
+//   {
+//     name: 'Blackburn Dotson',
+//     email: 'blackburndotson@furnigeer.com',
+//     eyeColor: 'brown',
+//     friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//     isActive: false,
+//     balance: 1498,
+//     gender: 'male',
+//     age: 38,
+//   },
+//   {
+//     name: 'Sheree Anthony',
+//     email: 'shereeanthony@kog.com',
+//     eyeColor: 'brown',
+//     friends: ['Goldie Gentry', 'Briana Decker'],
+//     isActive: true,
+//     balance: 2764,
+//     gender: 'female',
+//     age: 39,
+//   },
+// ];
+
+// console.log(usersArray);
+
 // const atTheOldToad = {
 //     potions: [
 //         { name: 'Speed potion', price: 460 },
@@ -40,13 +115,11 @@
 // console.log(atTheOldToad.removePotion('Dragon breath'));
 // console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
 
-
 // const atTheOldToad = {
 //     potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
 //     updatePotionName(oldName, newName) {
 //         // Change code below this line
 //         const oldPotionIndex = this.potions.indexOf(oldName)
-
 
 //         this.potions.splice(oldPotionIndex, 1, newName);
 //         // Change code above this line
@@ -79,7 +152,6 @@
 // atTheOldToad.addPotion('Invisibility')
 // console.log(atTheOldToad.potions);
 
-
 // const atTheOldToad = {
 //     // Change code below this line
 //     potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
@@ -90,7 +162,6 @@
 //     // Change code above this line
 // };
 // console.log(atTheOldToad.getPotions());
-
 
 // const bookShelf = {
 //     books: ['The last kingdom', 'Haze', 'The guardian of dreams'],
@@ -108,7 +179,6 @@
 // };
 // bookShelf.updateBook("The last kingdom", "Dune")
 // console.log(bookShelf.books);
-
 
 // const bookShelf = {
 //     // Change code below this line
@@ -202,7 +272,6 @@
 // console.log(highToday);
 // console.log(TomorrowIcon);
 
-
 // const products = [
 //     { name: 'Radar', price: 1300, quantity: 4 },
 //     { name: 'Scanner', price: 2700, quantity: 3 },
@@ -211,7 +280,7 @@
 // ];
 
 // function calculateTotalPrice(productName) {
-//     // Пиши код ниже этой строки        
+//     // Пиши код ниже этой строки
 
 //     for (const product of products) {
 //         const keys = Object.values(product);
@@ -289,7 +358,6 @@
 //     console.log(hexColors);
 // }
 
-
 // function countTotalSalary(salaries) {
 //     let totalSalary = 0;
 //     // Change code below this line
@@ -366,9 +434,6 @@
 
 // }
 
-
-
-
 // const apartment = {
 //     imgUrl: "https://via.placeholder.com/640x480",
 //     descr: "Spacious apartment in the city center",
@@ -394,7 +459,6 @@
 // console.log(numberOfTags);
 // console.log(lastTag);
 
-
 // function includes(array, value) {
 //     // Change code below this line
 //     for (const data of array) {
@@ -402,15 +466,11 @@
 //             return (data === value)
 //         }
 
-
 //     } return false
 // }
 // console.log(includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Jupiter'));
 
-
-
 // function findNumber(start, end, divisor) {
-
 
 //     for (let i = start; i < end; i += 1) {
 //         if (i % divisor === 0) {
@@ -421,7 +481,6 @@
 
 // }
 // console.log(findNumber(8, 17, 3));
-
 
 // function getEvenNumbers(start, end) {
 
@@ -436,13 +495,9 @@
 // }
 // console.log(getEvenNumbers(3, 11));
 
-
-
-
 // function filterArray(numbers, value) {
 
 //     const filteredNumbers = [];
-
 
 //     for (const number of numbers) {
 //         if (number > value) {
@@ -451,10 +506,8 @@
 //     }
 //     return filteredNumbers;
 
-
 // }
 // console.log(filterArray([12, 24, 8, 41, 76], 20));
-
 
 // function getCommonElements(array1, array2) {
 //     let newArray = []
@@ -470,8 +523,6 @@
 
 // console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
 
-
-
 // function checkFruit(fruit) {
 //     const fruits = ["apple", "plum", "pear", "orange"];
 
@@ -486,7 +537,6 @@
 
 //         if (numbers[i] > value) {
 
-
 //             newArray.push(numbers[i])
 
 //         }
@@ -495,7 +545,6 @@
 
 // }
 // console.log(filterArray([5, 7, 3, 9, 16], 3));
-
 
 // function findLongestWord(string) {
 
@@ -535,7 +584,6 @@
 //     return title.toLowerCase().split(" ").join("-");
 // }
 // console.log(slugify("Arrays for begginers"));
-
 
 // let array = [1, 2, 3, 6, 15, -5];
 // let arrayLast = array.length - 1;
@@ -578,7 +626,6 @@
 //   alert('greetings, stranger')
 // }
 
-
 // const firstArray = ["Mango", "Poly", "Ajax"]
 // const secondArray = ["Neptune", "Uranus", "Venus"]
 // let maxLength = 8;
@@ -594,7 +641,6 @@
 //   // return newArray;
 // }
 
-
 // //ПЕНСИЯ
 
 // let pension = prompt('введите желаемую пенсию в $');
@@ -605,7 +651,7 @@
 // // вычисляем необходимые средства в банке, дающие ежемесячный доход под % в сумме равной пенсии
 // let bankSavings = (pension * 12) / (percents * 0.01);
 // alert(`На вашем банковском счету на момент выхода на пенсию должно находиться $${bankSavings}, чтобы под ${percents}% годовых ежемесячные выплаты составляли желаемую сумму $${pension}`);
-// // вычисляем ежемесячные взносы в банк, чтобы средства в банке были 
+// // вычисляем ежемесячные взносы в банк, чтобы средства в банке были
 // let monthlyEcomomy = bankSavings / 12 / years;
 
 // alert(`Для этого на протяжении оставшихся вам до этого радостного события ${years} лет вам стоит откладывать по $${Math.round(monthlyEcomomy)} ежемесячно. Желаем удачи!`);
