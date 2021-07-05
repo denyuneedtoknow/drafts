@@ -1,21 +1,165 @@
-const players = {
-  mango: 1270,
-  poly: 468,
-  ajax: 710,
-  kiwi: 244,
+import { usersArray } from "./index.js"
+
+const getTotalBalanceByGender = (users, gender) => {
+  return users.filter((user) => user.gender === gender).reduce((total, user) => {
+    return total + user.balance
+  }, 0)
 };
-const playtimes = Object.values(players); // [1270, 468, 710, 244]
-// Пиши код ниже этой строки
+console.log(getTotalBalanceByGender(usersArray, "male"));
+// const getSortedFriends = users => {
+//   return [...users].flatMap(user => user.friends).filter((friend, index) => [...users].flatMap(user => user.friends).indexOf(friend) === index).sort((a, b) => a.localeCompare(b))
 
-const totalPlayTime = playtimes.reduce((playtime, numbers) => {
-  return playtime + numbers;
-});
+// };
 
-// Пиши код выше этой строки
-const averagePlayTime = totalPlayTime / playtimes.length;
-console.log(playtimes);
-console.log(totalPlayTime);
-console.log(averagePlayTime);
+// console.log(getSortedFriends(usersArray));
+// const getNamesSortedByFriendCount = users => {
+//   return [...users].sort((a, b) => a.friends.length - b.friends.length).map(user => user.name)
+
+// };
+
+// console.log(getNamesSortedByFriendCount(usersArray));
+
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 8.14 },
+//   { title: 'Сны В Ведьмином Доме', author: 'Говард Лавкрафт', rating: 8.67 }
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Пиши код ниже этой строки
+
+// const names = books.filter(book => book.rating >= MIN_BOOK_RATING).map(book => book.author).sort((a, b) => a.localeCompare(b))
+
+// console.log(names);
+
+
+// const sortByName = users => {
+//   return [...users].sort((a, b) => a.name.localeCompare(b.name))
+
+// };
+
+// console.log(sortByName(usersArray));
+
+// const sortByDescendingFriendCount = users => {
+
+//   return [...users].sort((a, b) => b.friends.length - a.friends.length)
+
+// }
+// console.log(sortByDescendingFriendCount(usersArray));
+
+// const sortByAscendingBalance = users => {
+//   return [...users].sort((a, b) => a.balance - b.balance)
+
+// };
+
+// console.log(sortByAscendingBalance(usersArray));
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+// ];
+// // Пиши код ниже этой строки
+
+// const sortedByAuthorName = [...books].sort((a, b) => a.author.localeCompare(b.author));
+
+// const sortedByReversedAuthorName = [...books].sort((a, b) => b.author.localeCompare(a.author));
+
+// const sortedByAscendingRating = [...books].sort((a, b) => a.rating - b.rating);
+
+// const sortedByDescentingRating = [...books].sort((a, b) => b.rating - a.rating);
+
+// console.log(sortedByAuthorName);
+// console.log(sortedByReversedAuthorName);
+// console.log(sortedByAscendingRating);
+// console.log(sortedByDescentingRating);
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский',
+//   'Говард Лавкрафт'
+// ];
+// // Пиши код ниже этой строки
+
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+// console.log(authorsInAlphabetOrder,
+//   authorsInReversedOrder);
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// console.log(descendingReleaseDates);
+
+// // const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // const authors = [
+// //   'Ли Танит',
+// //   'Бернард Корнуэлл',
+// //   'Роберт Шекли',
+// //   'Федор Достоевский'
+// // ];
+// // // Пиши код ниже этой строки
+
+// // const ascendingReleaseDates = [...releaseDates].sort();
+
+// // const alphabeticalAuthors = [...authors].sort();
+
+// console.log(ascendingReleaseDates);
+
+// console.log(alphabeticalAuthors);
+
+// const getTotalFriendCount = users => users.reduce((totalFriends, user) => {
+//   return totalFriends + user.friends.length
+// }, 0);
+
+// console.log(getTotalFriendCount(usersArray));
+
+
+// const calculateTotalBalance = users => users.reduce((total, user) => {
+//   return total + user.balance
+// }, 0)
+
+
+// console.log(calculateTotalBalance(usersArray));
+// const players = [
+//   { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Поли', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Киви', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+
+// const totalAveragePlaytimePerGame = players.reduce((AveragePlays, player) => { return AveragePlays + player.playtime / player.gamesPlayed }, 0)
+
+
+// console.log(totalAveragePlaytimePerGame);
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Пиши код ниже этой строки
+
+// const totalPlayTime = playtimes.reduce((playtime, numbers) => {
+//   return playtime + numbers;
+// });
+
+// // Пиши код выше этой строки
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log(playtimes);
+// console.log(totalPlayTime);
+// console.log(averagePlayTime);
 
 // const isAnyUserActive = users => {
 //   return users.some(user => user.isActive);
