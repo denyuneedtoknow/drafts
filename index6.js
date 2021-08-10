@@ -1,11 +1,11 @@
-import { usersArray } from "./index.js"
+// import { usersArray } from "./index.js"
 
-const getTotalBalanceByGender = (users, gender) => {
-  return users.filter((user) => user.gender === gender).reduce((total, user) => {
-    return total + user.balance
-  }, 0)
-};
-console.log(getTotalBalanceByGender(usersArray, "male"));
+// const getTotalBalanceByGender = (users, gender) => {
+//   return users.filter((user) => user.gender === gender).reduce((total, user) => {
+//     return total + user.balance
+//   }, 0)
+// };
+// console.log(getTotalBalanceByGender(usersArray, "male"));
 // const getSortedFriends = users => {
 //   return [...users].flatMap(user => user.friends).filter((friend, index) => [...users].flatMap(user => user.friends).indexOf(friend) === index).sort((a, b) => a.localeCompare(b))
 
@@ -32,7 +32,6 @@ console.log(getTotalBalanceByGender(usersArray, "male"));
 // const names = books.filter(book => book.rating >= MIN_BOOK_RATING).map(book => book.author).sort((a, b) => a.localeCompare(b))
 
 // console.log(names);
-
 
 // const sortByName = users => {
 //   return [...users].sort((a, b) => a.name.localeCompare(b.name))
@@ -122,11 +121,9 @@ console.log(getTotalBalanceByGender(usersArray, "male"));
 
 // console.log(getTotalFriendCount(usersArray));
 
-
 // const calculateTotalBalance = users => users.reduce((total, user) => {
 //   return total + user.balance
 // }, 0)
-
 
 // console.log(calculateTotalBalance(usersArray));
 // const players = [
@@ -138,7 +135,6 @@ console.log(getTotalBalanceByGender(usersArray, "male"));
 // // Пиши код ниже этой строки
 
 // const totalAveragePlaytimePerGame = players.reduce((AveragePlays, player) => { return AveragePlays + player.playtime / player.gamesPlayed }, 0)
-
 
 // console.log(totalAveragePlaytimePerGame);
 
