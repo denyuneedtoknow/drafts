@@ -22,15 +22,14 @@
 //   id = setInterval(calc, 1000);
 //   console.log(startDate);
 // }
-
-//таймер - дедлайн вместо старта от дедлайна отнять текущую
-
 // function timerStop() {
 //   clearInterval(id);
 // }
 
 // refs.start.addEventListener('click', timerStart);
 // refs.stop.addEventListener('click', timerStop);
+
+//таймер - дедлайн вместо старта от дедлайна отнять текущую
 
 class StopWatch {
   constructor() {
@@ -67,5 +66,7 @@ class StopWatch {
     this.refs.stop.addEventListener('click', this.timerStop);
   }
 }
+
 const watch = new StopWatch();
-watch.init();
+window.addEventListener('DOMContentLoaded', watch.timerStart);
+// watch.init();
