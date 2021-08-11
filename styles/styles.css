@@ -143,3 +143,16 @@ p {
   fill: #fff;
   transform: rotateZ(360deg);
 }
+
+.clock {
+  display: flex;
+  margin-top: 20px;
+}
+.clock-thumb {
+  padding: 5px;
+  text-align: center;
+}
+.clock-segment {
+  margin-left: 5px;
+  border: 1px solid black;
+}
