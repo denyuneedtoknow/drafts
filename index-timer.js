@@ -47,7 +47,6 @@ class StopWatch {
   }
   calc = () => {
     const currentDate = Date.now();
-    // const delta = (currentDate - this.startDate) / 1000;
     const delta = (this.deadline - currentDate) / 1000;
     const sec = Math.floor(delta % 60);
     const mins = Math.floor((delta / 60) % 60);
@@ -80,4 +79,4 @@ window.addEventListener('DOMContentLoaded', watch.timerStart);
 // watch.init();
 
 const date = new Date(2021, 7, 16, 11, 59, 0, 0);
-console.log(`2021, 7, 16, 11, 59, 0, 0 соответствует ${date.getTime()}`);
+console.log(`${date.getTime()}`);
