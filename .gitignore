@@ -73,8 +73,9 @@ typings/
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
+ .parcel-cache
 .cache
-
+dist
 # Next.js build output
 .next
 
@@ -102,3 +103,21 @@ dist
 
 # TernJS port file
 .tern-port
+.parcel-cache/571aaecbd7a74146
+.parcel-cache/022bb114c9ab85da
+.parcel-cache/3d7f130681e1fee0
+.parcel-cache/047a22f4a329426f
+.parcel-cache/3fdae2a39a40ee7d
+.parcel-cache/627fee0102f96131
+.parcel-cache/723cf32e1649d28b.txt
+.parcel-cache/760e6af8f24e244e.txt
+.parcel-cache/9e2dc4251ed5336b.txt
+.parcel-cache/a12cf43570d965cb
+.parcel-cache/b88eb1460dc9d961
+.parcel-cache/acf05fefdaae70b1
+.parcel-cache/d3c92f3cdf9e0445
+.parcel-cache/d835dc82a9d9a896
+.parcel-cache/data.mdb
+.parcel-cache/dbfb5987b300dbb9.txt
+.parcel-cache/f32c7352f6842f43
+.parcel-cache/lock.mdb
